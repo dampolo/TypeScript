@@ -12,10 +12,9 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'TypeScriptGrundkurs';
 
-  theString = "das ist ein String";
-  theNumber = 12365413546;
-  theBoolean = true;
+  theTypeless: number;
 
-  theUndefined = undefined;
-  theNull = null;
+  constructor() {
+    this.theTypeless = 55;
+  }
 }
