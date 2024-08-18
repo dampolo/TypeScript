@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { Person } from './interfaces/person.interface';
 
 @Component({
   selector: 'app-root',
@@ -12,11 +13,7 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'TypeScriptGrundkurs';
   
-  person: {
-    readonly name: string;
-    age: number;
-    position?: string;
-  } = {
+  person: Person = {
     name: "Florian",
     age: 50,
     position: "boss"
@@ -24,7 +21,7 @@ export class AppComponent {
 
 
   constructor() {
-    this.person.name = 12
+    this.person.position = "12"
   }
 
 }
