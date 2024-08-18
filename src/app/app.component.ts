@@ -11,15 +11,20 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'TypeScriptGrundkurs';
+  
+  noteType: "trash" | "note" = "trash";
 
-  theArray: (number | string)[] = [1, 2];
+  theArray: [200 | 404, number] = [200, 404]
+
+
+//   Zusammenfassung
+// Literals sind spezifische Werte, die direkt im Code verwendet werden, 
+// und du kannst sie verwenden, um präzisere Typen in TypeScript zu definieren.
+// Tuples sind eine spezielle Art von Array, 
+// bei dem die Anzahl der Elemente und ihre Typen vorgegeben sind.
 
   constructor() {
-    this.theArray = [1, "2"]
-    this.add(1,2)
+    this.theArray = [200, 404];
   }
 
-  add(a:number, b:number):number {
-    return a + b;
-  }
 }
