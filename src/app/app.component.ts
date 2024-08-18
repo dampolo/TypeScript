@@ -13,15 +13,16 @@ import { Person } from './interfaces/person.interface';
 export class AppComponent {
   title = 'TypeScriptGrundkurs';
   
-  person: Person = {
-    name: "Florian",
-    age: 50,
-    position: "boss"
-  }
-
+  fruit = "";
+  fruitList = ["Banana"]
 
   constructor() {
-    this.person.position = "12"
+    let banana = this.fruitList.pop()
+    if (banana != undefined) {
+      this.fruit = banana
+    } else {
+      
+    }
   }
 
 }
