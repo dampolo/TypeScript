@@ -12,9 +12,14 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'TypeScriptGrundkurs';
 
-  theTypeless: number;
+  theArray: (number | string)[] = [1, 2];
 
   constructor() {
-    this.theTypeless = 55;
+    this.theArray = [1, "2"]
+    this.add(1,2)
+  }
+
+  add(a:number, b:number):number {
+    return a + b;
   }
 }
